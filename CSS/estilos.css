@@ -1,0 +1,131 @@
+
+@/* Aplicando tipografía externa desde Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+/* Estilo general del cuerpo */
+body {
+    font-family: 'Roboto', sans-serif; /* Tipografía para todo el cuerpo */
+    background-color: #f5f5f5; /* Fondo gris para la página */
+    color: #333; /* Color de texto principal */
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilo para el título principal */
+h1 {
+    font-size: 2.5em;
+    text-align: left;
+    margin: 20px 0;
+}
+
+/* Estilo para el logo dentro del título */
+h1 img {
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+/* Estilo para las secciones */
+h2 {
+    font-size: 1.8em;
+    color: #333;
+    margin: 20px 0 10px;
+}
+
+/* Estilo para los enlaces de las secciones */
+ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: left;
+}
+
+ul li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+ul li a {
+    font-size: 1.2em;
+    color: #333;
+    text-decoration: underline;
+    transition: all 0.3s ease;
+}
+
+/* Cambiar estilo de los enlaces al pasar el cursor */
+ul li a:hover {
+    font-weight: bold;
+    text-decoration: none;
+    color: #000;
+}
+
+/* Estilo para los artículos */
+article {
+    background-color: white;
+    padding: 20px;
+    margin: 20px auto;
+    width: 40%;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+/* Estilo para la imagen dentro de los artículos */
+article img, article video {
+    width: 100%;
+    height: auto;
+    margin: 20px 0;
+}
+
+/* Estilo para los títulos de los artículos */
+article h2 {
+    font-size: 1.5em;
+    color: #2c2c2c;
+}
+
+/* Efecto hover para los bloques de artículos */
+article:hover {
+    background-color: #000;
+    color: white;
+}
+
+/* Estilo para el pie de página */
+footer {
+    background-color: #c9d2d0;
+    color: #31231e;
+    text-align: center;
+    padding: 20px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Estilo para los enlaces en el pie de página */
+footer a {
+    color: #31231e;
+    text-decoration: underline;
+}
+
+footer a:hover {
+    text-decoration: none;
+}
+
+/* Estilos para hacer el sitio responsivo */
+@media (max-width: 768px) {
+    /* Colocar los artículos en una sola columna en pantallas pequeñas */
+    article {
+        width: 100%;
+    }
+
+    /* Reducir tamaño de los títulos */
+    h1 {
+        font-size: 2em;
+    }
+
+    h2 {
+        font-size: 1.5em;
+    }
+
+    ul li {
+        display: block;
+        margin-bottom: 10px;
+    }
+}
